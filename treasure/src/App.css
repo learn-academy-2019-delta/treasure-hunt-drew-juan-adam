@@ -1,0 +1,23 @@
+
+
+#board-styles {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: 300px;
+  width: 300px;
+  margin: auto;
+  background-color: red;
+}
+
+#square-styles {
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  border: 2px dashed black;
+  height: 95px;
+  width: 95px;
+  background-color: pink;
+  
+}
+
