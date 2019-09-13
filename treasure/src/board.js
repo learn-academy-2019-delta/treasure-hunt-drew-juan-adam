@@ -29,12 +29,12 @@ export default class Board extends Component{
         })
     }
     
-    getOpenBoardNumber = (max, blackList=[]) => {
+    getOpenBoardNumber = (arr1, arr2=[]) => {
         let newNumber
         do{
-            newNumber = Math.floor(Math.random() * max)
+            newNumber = Math.floor(Math.random() *arr1)
             console.log(newNumber)
-        }while(blackList.indexOf(newNumber) >=0)
+        }while(arr2.indexOf(newNumber) >=0)
         return newNumber
     }
     
@@ -46,13 +46,13 @@ export default class Board extends Component{
         if(gameStatus != 'inProgress'){ return }
         
         if(spacesIndex === bombIndex){
-            spaces[spacesIndex] = 'BOOM'
+            spaces[spacesIndex] = '💣'
             gameStatus = 'lost'
         }else if(spacesIndex === treasureIndex){
-            spaces[spacesIndex] = 'Coin'
+            spaces[spacesIndex] = '⭐️'
             gameStatus = 'won'
         } else {
-            spaces[spacesIndex] = 'T'
+            spaces[spacesIndex] = '🤡'
         }
         
         this.setState({ gameStatus, spaces })

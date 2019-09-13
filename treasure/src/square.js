@@ -4,7 +4,7 @@ import './App.css'
 export default class Square extends Component {
     handleClick = () => {
         const{index} = this.props
-   this.props.handleClick(index)
+  this.props.handleClick(index)
 }
     render(){
     let{ value } = this.props

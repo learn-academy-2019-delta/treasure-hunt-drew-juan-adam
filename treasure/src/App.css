@@ -7,7 +7,6 @@
   height: 300px;
   width: 300px;
   margin: auto;
-  background-color: red;
 }
 
 #square-styles {
@@ -17,7 +16,6 @@
   border: 2px dashed black;
   height: 95px;
   width: 95px;
-  background-color: pink;
+
   
 }
-
